@@ -2,6 +2,9 @@ package org.JavaTe.tools;
 
 public class Actions {
     /**
+     * @author ferderplays
+     */
+    /**
      * What does the function below do?:
      * -> It print a thing into your IDE console
      * How can it make my coding easier?:
