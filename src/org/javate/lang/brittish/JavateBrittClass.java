@@ -46,22 +46,16 @@ public class JavateBrittClass {
         return new Scanner(System.in);
     }
 
-    public static String getSILine() {
-        try (Scanner scanner = new Scanner(System.in)) {
-            return scanner.nextLine();
-        }
+    public static String getSILine(Scanner scanner) {
+        return scanner.nextLine();
     }
 
-    public static String getSIString() {
-        try (Scanner scanner = new Scanner(System.in)) {
-            return scanner.next();
-        }
+    public static String getSIString(Scanner scanner) {
+        return scanner.next();
     }
 
-    public static int getSIInt() {
-        try (Scanner scanner = new Scanner(System.in)) {
-            return scanner.nextInt();
-        }
+    public static int getSIInt(Scanner scanner) {
+        return scanner.nextInt();
     }
 
     public static String jsonify(Object x) {
