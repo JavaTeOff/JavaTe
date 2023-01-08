@@ -1,8 +1,8 @@
 package org.javate.lang.ui;
 
-import java.awt.Container;
+import java.awt.*;
 
-import javax.swing.JFrame;
+import javax.swing.*;
 
 public class JavateApp extends JFrame {
     public JavateApp() {

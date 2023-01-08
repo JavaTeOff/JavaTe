@@ -1,18 +1,10 @@
 package org.javate.lang.brittish;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Base64;
+import java.io.*;
+import java.net.*;
+import java.util.*;
 import java.util.List;
-import java.util.Scanner;
-
-import java.awt.Color;
-
-import javax.swing.JFrame;
+import java.awt.*;
 
 import org.javate.lang.ui.JavateApp;
 
@@ -50,19 +42,26 @@ public class JavateBrittClass {
         return html;
     }
 
+    public static Scanner SIscan() {
+        return new Scanner(System.in);
+    }
+
     public static String getSILine() {
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextLine();
+        try (Scanner scanner = new Scanner(System.in)) {
+            return scanner.nextLine();
+        }
     }
 
     public static String getSIString() {
-        Scanner scanner = new Scanner(System.in);
-        return scanner.next();
+        try (Scanner scanner = new Scanner(System.in)) {
+            return scanner.next();
+        }
     }
 
     public static int getSIInt() {
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextInt();
+        try (Scanner scanner = new Scanner(System.in)) {
+            return scanner.nextInt();
+        }
     }
 
     public static String jsonify(Object x) {
