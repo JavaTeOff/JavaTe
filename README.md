@@ -14,3 +14,8 @@ Simplified java, mainly prints tho as those take a lot characters
 > > go to your project structure "File > Project Structure..."
 > > Click on "Libraries" and click on the plus
 > > Select the downloaded Javate JAR (wont be in your project folder, unless u put it there in File Explorer)
+
+> in VSCode
+> > click on the "Java Project/s"
+> > Hover over the "Referenced libraries"
+> > Click the "+" and select the Javate JAR you downloaded
