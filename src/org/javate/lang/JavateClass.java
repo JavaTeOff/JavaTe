@@ -47,26 +47,19 @@ public class JavateClass {
         return html;
     }
 
-    public static Scanner SIscan() {
-        return new Scanner(System.in);
-    }
-
     public static String getSILine() {
-        try (Scanner scanner = new Scanner(System.in)) {
-            return scanner.nextLine();
-        }
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine();
     }
 
     public static String getSIString() {
-        try (Scanner scanner = new Scanner(System.in)) {
-            return scanner.next();
-        }
+        Scanner scanner = new Scanner(System.in);
+        return scanner.next();
     }
 
     public static int getSIInt() {
-        try (Scanner scanner = new Scanner(System.in)) {
-            return scanner.nextInt();
-        }
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextInt();
     }
 
     public static String jsonify(Object x) {
